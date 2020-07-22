@@ -9,9 +9,7 @@ test('creates a enemy object', () => {
     expect(enemy.health).toEqual(expect.any(Number));
     expect(enemy.strength).toEqual(expect.any(Number));
     expect(enemy.agility).toEqual(expect.any(Number));
-    expect(enemy.inventory).toEqual(
-        expect.arrayContaining([expect.any(Object)])
-      );
+
   });
   test("gets enemy's health value", () => {
     const enemy = new Enemy('goblin', 'sword');
